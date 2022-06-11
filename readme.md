@@ -6,10 +6,10 @@ Following sections include an introduction and implementation details of the pro
 ## Table of contents
 
 1. [Introduction](#Introduction)
-2. [Technology stack](#Technology stack)
+2. [Technology stack](#Technology_stack)
 3. [Setup](#Setup)
-4. [Work flow](#Work flow)
-5. [How to execute](#How to execute)
+4. [Work flow](#Work_flow)
+5. [How to execute](#How_to_execute)
 
 ## 1. Introduction
 Behavior Driven Development [BDD] methodology is used to build the project as it describes the behavior of the system from the customer's perspective.
