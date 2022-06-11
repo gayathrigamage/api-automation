@@ -69,3 +69,5 @@ Allure report configuration is available in pom.xml file. Please refer to 'build
 
 ## How to execute
 CucumberIT file is the execution point. Please refer to "Usage"
+###### usage
+![](demo.gif)
