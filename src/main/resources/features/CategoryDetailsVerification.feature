@@ -29,7 +29,7 @@ Feature: Category Details Verification
     When user clicks search and waits for results
     Then user gets a set of results with status code 200
 
-    And in the search response, promotion element "<name>" should contains "<promoEleDescription>"
+    And in the search response, promotions element with name "<name>" has a description which should contains "<promoEleDescription>"
 
     Examples:
       | categoryId | name    | promoEleDescription       |

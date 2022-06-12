@@ -29,8 +29,8 @@ public class SearchStepDefinition implements En {
         });
 
         When("^user clicks search and waits for results$", () -> {
-            String url = PropertyLoader.getAllProperties().getProperty(Constants.CATEGORY_SEARCH_END_POINT);
-            response = requestSpecification.when().get(url);
+            String categorySearchEndPoint = PropertyLoader.getAllProperties().getProperty(Constants.CATEGORY_SEARCH_END_POINT);
+            response = requestSpecification.when().get(categorySearchEndPoint);
         });
 
     }

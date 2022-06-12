@@ -28,7 +28,7 @@ public class Assertions implements En {
         And("^in the search response, category relist status should be \"([^\"]*)\"$", (String categoryRelistStatus) -> {
             validatableResponse.body("CanRelist", equalTo(Boolean.valueOf(categoryRelistStatus)));
         });
-        And("^in the search response, promotion element \"([^\"]*)\" should contains \"([^\"]*)\"$", (String promoEleName, String promoEleDescription) -> {
+        And("^in the search response, promotions element with name \"([^\"]*)\" has a description which should contains \"([^\"]*)\"$", (String promoEleName, String promoEleDescription) -> {
 
             /* *** Travers to Promotions node and collect all the 'Name' elements *** */
             List<String> promoEleNameList = validatableResponse.extract().path("Promotions.Name");
