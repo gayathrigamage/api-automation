@@ -81,4 +81,4 @@ CucumberIT file is the execution point.
 
 Please refer to 'execution'
 ###### execution
-![](demo.gif)
+![](executiondemo.gif)
