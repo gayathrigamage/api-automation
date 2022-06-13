@@ -14,7 +14,7 @@ public class PropertyLoader {
     private static Properties allProperties;
 
     /**
-     * This method reads all the property
+     * This method reads all the property values from 'src/main/resources/properties/EndPoints.properties' file
      *
      * @throws IOException when errors occur while accessing the property files
      */
