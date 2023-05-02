@@ -32,5 +32,5 @@ Feature: Category Details Verification
     And in the search response, promotions element with name "<name>" has a description which should contains "<promoEleDescription>"
 
     Examples:
-      | categoryId | name    | promoEleDescription       
+      | categoryId | name    | promoEleDescription       |       
       | 6327       | Gallery | Good position in category |
