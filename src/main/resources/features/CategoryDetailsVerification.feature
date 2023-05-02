@@ -10,7 +10,7 @@ Feature: Category Details Verification
 
     Examples:
       | categoryId | categoryName   |
-      | 6327       | Carbon creditss |
+      | 6327       | Carbon credits |
 
 
   Scenario Outline: Verify category relist status(Scenario 2 : Verify category relist status in category Id "<categoryId>")
@@ -32,5 +32,5 @@ Feature: Category Details Verification
     And in the search response, promotions element with name "<name>" has a description which should contains "<promoEleDescription>"
 
     Examples:
-      | categoryId | name    | promoEleDescription       |
+      | categoryId | name    | promoEleDescription       
       | 6327       | Gallery | Good position in category |
