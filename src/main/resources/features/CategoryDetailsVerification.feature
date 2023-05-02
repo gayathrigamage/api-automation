@@ -10,7 +10,7 @@ Feature: Category Details Verification
 
     Examples:
       | categoryId | categoryName   |
-      | 6327       | Carbon credits |
+      | 6327       | Carbon creditss |
 
 
   Scenario Outline: Verify category relist status(Scenario 2 : Verify category relist status in category Id "<categoryId>")
