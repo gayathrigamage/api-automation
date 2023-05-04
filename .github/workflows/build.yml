@@ -9,8 +9,7 @@
 name: Build and Test Java-Maven Project
 
 on:
-  push:
-    branches: [ master ]
+  
   pull_request:
     branches: [ master ]
 
