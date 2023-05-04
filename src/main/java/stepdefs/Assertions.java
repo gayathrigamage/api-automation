@@ -34,7 +34,7 @@ public class Assertions implements En {
             List<String> promoEleNameList = validatableResponse.extract().path("Promotions.Name");
             /* *** Gets the index of the given element 'Name' *** */
             int index = promoEleNameList.indexOf(promoEleName);
-            /* *** Picks the element description related to the given 'Name' node and asserts that description value contains the given text  *** */
+            /* *** Pickss the element description related to the given 'Name' node and asserts that description value contains the given text  *** */
             validatableResponse.body("Promotions[" + index + "].Description", containsString(promoEleDescription));
         });
 
