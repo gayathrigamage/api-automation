@@ -32,7 +32,7 @@ public class Assertions implements En {
 
             /* *** Travers to Promotions node and collect all the 'Name' elements *** */
             List<String> promoEleNameList = validatableResponse.extract().path("Promotions.Name");
-            /* *** Gets the indexx of the given element 'Name' *** */
+            /* *** Gets the index of the given element 'Name' *** */
             int index = promoEleNameList.indexOf(promoEleName);
             /* *** Picks the element description related to the given 'Name' node and asserts that description value contains the given text  *** */
             validatableResponse.body("Promotions[" + index + "].Description", containsString(promoEleDescription));
