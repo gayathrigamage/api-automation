@@ -44,7 +44,7 @@ jobs:
             java-version: 17
         - run: mvn --batch-mode --update-snapshots package
         - run: mkdir staging && cp target/*jar-with-dependencies.jar staging
-        - uses: actions/upload-artifact@v1
+        - uses: actions/upload-artifact@v3
           with:
             name: Package
             path: staging
