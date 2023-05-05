@@ -37,6 +37,11 @@ jobs:
       runs-on: windows-latest
       needs: build
       steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-java@v3
+          with:
+            distribution: 'oracle'
+            java-version: 17
         - run: mvn --batch-mode --update-snapshots package -DskipTest
         - run: mkdir staging && cp target/*.jar temp
         - uses: actions/upload-artifact@v3
