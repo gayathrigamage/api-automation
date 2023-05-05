@@ -32,5 +32,16 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      
+  publish-job:
+      runs-on: windows-latest
+      needs: build
+      steps:
+        - run: mvn --batch-mode --update-snapshots package -DskipTest
+        - run: mkdir staging && cp target/*.jar temp
+        - uses: actions/upload-artifact@v3
+          with:
+            name: Package
+            path: temp
 
     
