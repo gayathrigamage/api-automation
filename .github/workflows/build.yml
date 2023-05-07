@@ -43,7 +43,7 @@ jobs:
             distribution: 'oracle'
             java-version: 17
         - run: mvn --batch-mode --update-snapshots package -DskipTest
-        - run: mkdir staging && cp target/*.jar temp
+        - run: mkdir temp && cp target/*.jar temp
         - uses: actions/upload-artifact@v3
           with:
             name: Package
