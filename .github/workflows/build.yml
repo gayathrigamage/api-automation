@@ -33,7 +33,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml --update-snapshots package
       
-  publish-job:
+  publish:
       runs-on: windows-latest
       needs: build
       steps:
