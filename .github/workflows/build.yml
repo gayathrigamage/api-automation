@@ -10,7 +10,7 @@ name: Java CI with Maven and Publish Package
 
 on:
   push:
-    branches: [ master ]
+    branches: [ gayathri ]
   pull_request:
     branches: [ master ]
 
