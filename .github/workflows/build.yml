@@ -17,10 +17,10 @@ on:
 jobs:
   build:
 
-    runs-on: ${{matrix.os}}
+    runs-on: ${{matrix.oss}}
     strategy:
      matrix:
-      os: [windows-latest, ubuntu-latest]
+      oss: [windows-latest, ubuntu-latest]
 
     steps:
     - uses: actions/checkout@v3
