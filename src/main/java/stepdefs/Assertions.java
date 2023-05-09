@@ -36,7 +36,7 @@ public class Assertions implements En {
             int index = promoEleNameList.indexOf(promoEleName);
             /* *** Picks the element description related to the given 'Name' node and asserts that description value contains the given text  *** */
             validatableResponse.body("Promotions[" + index + "].Description", containsString(promoEleDescription));
-        })
+        });
 
 
     }
